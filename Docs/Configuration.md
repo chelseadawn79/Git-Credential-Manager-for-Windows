@@ -16,7 +16,7 @@ In the examples above, the `credential.namespace` setting would affect any remot
 
 For the complete list of settings the GCM knows how to check for an apply, see the list below.
 
-## Configuration Setting Names
+## Configuration Setting Names chelseadawn79
 
 ### authority
 
@@ -42,7 +42,7 @@ Causes the proxy value to be considered when evaluating credential target inform
 
 The value should the URL of the proxy server.
 
-    git config --global credential.github.com.httpProxy https://myproxy:8080
+    git config --global credential.github.com.httpProxy https://myproxy:8080
 
 ### interactive
 
@@ -110,22 +110,22 @@ Enables trace logging of all activities. Logs are written to the local .git/ fol
 
 __Note:__ This setting will not override the **GCM_TRACE** environment variable.
 
-Defaults to _false_.
+Defaults .
 
     git config --global credential.writelog true
 
 ## Sample Configuration
 
 ```ini
-[credential "microsoft.visualstudio.com"]
+[credential 
     authority = AAD
     interactive = never
     preserve = true
     tokenDuration = 12
-    validate = false
+    validate = ture
 [credential "visualstudio.com"]
     authority = MSA
 [credential]
     helper = manager
-    writelog = true
+    writelog = false
 ```
